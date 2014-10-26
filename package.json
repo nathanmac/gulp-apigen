@@ -1,0 +1,41 @@
+{
+  "name": "gulp-apigen",
+  "version": "0.1.0",
+  "description": "PHP ApiGen plugin for Gulp",
+  "main": "index.js",
+  "dependencies": {
+    "map-stream": "0.0.4",
+    "gulp-util": "~2.2.14"
+  },
+  "devDependencies": {
+    "jshint": "~2.4.4",
+    "mocha": "~1.17.1",
+    "should": "~3.1.2",
+    "gulp-shell": "^0.2.4",
+    "gulp": "^3.5.5",
+    "gulp-notify": "^1.0.0-beta"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec && jshint ./*.js && jshint ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanmac/gulp-apigen"
+  },
+  "keywords": [
+    "gulpplugin",
+    "apigen"
+  ],
+  "author": "Nathan Macnamara <nathan.macnamara@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanmac/gulp-apigen/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "homepage": "https://github.com/nathanmac/gulp-apigen",
+  "directories": {
+    "test": "test"
+  }
+}

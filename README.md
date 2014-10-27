@@ -88,4 +88,4 @@ E-Mail: [nathan.macnamara@outlook.com](mailto:nathan.macnamara@outlook.com)
 Twitter: [@nathmacn](http://twitter.com/nathmacn)
 
 
-Inspired By: [gulp-codeception](https://github.com/mikeerickson/gulp-codeception) && [gulp-phpunit](https://github.com/mikeerickson/gulp-phpunit)
+Inspired By: [gulp-codeception](https://github.com/mikeerickson/gulp-codeception) & [gulp-phpunit](https://github.com/mikeerickson/gulp-phpunit)

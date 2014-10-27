@@ -21,7 +21,7 @@ gulp.task('apigen', function() {
 
 // option 2: with defined bin
 gulp.task('apigen', function() {
-	gulp.src('apigen.neon').pipe(apigen('./vendor/bin/apigen generate'));
+	gulp.src('apigen.neon').pipe(apigen('./vendor/bin/apigen'));
 });
 
 // option 3: supply callback to integrate something like notification (using gulp-notify)
@@ -33,7 +33,7 @@ var gulp = require('gulp'),
 
 gulp.task('apigen', function() {
   gulp.src('apigen.neon')
-    .pipe(apigen('./vendor/bin/apigen generate', {notify: true}))
+    .pipe(apigen('./vendor/bin/apigen', {notify: true}))
     .on('error', notify.onError(APINotification('fail', 'apigen')))
     .pipe(notify(APINotification('done', 'apigen')));
 });

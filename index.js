@@ -30,15 +30,16 @@ module.exports = function(command, opt) {
 	if (typeof opt.clear === 'undefined') { opt.clear = false; }
 	if (typeof opt.notify === 'undefined') { opt.notify = false; }
 
-    command += ' generate';
+   command += ' generate';
 
 	return map(function (file, cb) {
-
 		// construct command
 		var cmd = opt.clear ? 'clear && ' + command : command;
+		cmd += ' --config ' + file.path;
 
 		if(counter === 0) {
 			counter++;
+
 
 			cmd.trim(); // clean up any space remnants
 

@@ -42,7 +42,7 @@ function APINotification(status, pluginName, override) {
 	var options = {
 		title:   ( status == 'done' ) ? 'Docs Generated!' : 'Failed to Generate Docs!',
 		message: ( status == 'done' ) ? '\n\nAPI Documentation has been generated!\n\n' : '\n\nDocumentation has failed to generate...\n\n',
-		icon:    __dirname + '/node_modules/gulp-' + pluginName +'/assets/test-' + status + '.png'
+		icon:    __dirname + '/node_modules/gulp-' + pluginName + '/assets/test-' + status + '.png'
 	};
 	options = _.merge(options, override);
   return options;
@@ -75,7 +75,7 @@ Type: `Boolean (Default: false)`
 
 Call user supplied callback to handle notification (use gulp-notify)
 
-## Changelog
+## Change Log
 
 - 0.1.0: Initial Release
 
@@ -83,7 +83,7 @@ Call user supplied callback to handle notification (use gulp-notify)
 
 gulp-apigen written by Nathan Macnamara
 
-E-Mail: [nathan.macnamara@outlook.com](mailto:nathan.macnamara@outlook.com)
+E-Mail: [hola@nathanmac.com](mailto:hola@nathanmac.com)
 
 Twitter: [@nathmacn](http://twitter.com/nathmacn)
 
